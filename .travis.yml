@@ -4,16 +4,12 @@ dist: bionic
 matrix:
   fast_finish: true
   allow_failures:
-  - node_js: 6
-  - node_js: 8
   - node_js: node
   - node_js: lts/*
 node_js:
-- 6
-- 8
-- 10
-- 12
-- 14
+- 20
+- 22
+- 24
 - lts/*
 - node
 env:
@@ -51,7 +47,7 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    node: 10
+    node: 20
     os: linux
     condition: "$TRAVIS_OS_NAME = linux"
 notifications:
