@@ -14,7 +14,7 @@ describe("p7e", function () {
                 try {
                     expect(error).to.be.ok;
                     expect(stdout).to.eql("");
-                    expect(stderr).to.match(/Please supply a value/);
+                    expect(stderr).to.match(/Please supply a value|missing required argument/);
                     resolve();
                 } catch (expectationError) {
                     reject(expectationError);

@@ -1,40 +1,41 @@
 #!/usr/bin/env node
 
-const commander = require("commander");
+const {program} = require("commander");
 const Pseudolocalizer = require("../lib/pseudolocalizer");
 const packageJson = require("../package.json");
 
-commander
+program
     .version(packageJson.version)
-    .usage("[options] <strings...>")
+    .argument("<strings...>", "Text-to-ʕ•ᴥ•ʔ translations for strings")
     .description("Text-to-ʕ•ᴥ•ʔ translations for strings")
-    .option("-p, --preset <preset>", "Use a preset pseudolocalizer {CJK, LCG, AFB, mix}", /^(CJK|LCG|AFB|mix)$/gm)
-    .option("-r, --relativeScale <number>", "Use a custom relativeScale", /^\d+$/gm)
+    .option("-p, --preset <preset>", "Use a preset pseudolocalizer {CJK, LCG, AFB, mix}")
+    .option("-r, --relativeScale <number>", "Use a custom relativeScale")
     .option("-s, --prefix <string>", "Use a custom prefix")
     .option("-e, --postfix <string>", "Use a custom postfix")
     .option("--prePad <string>", "Use a custom pre padding")
     .option("--postPad <string>", "Use a custom post padding")
     .parse(process.argv);
 
+const options = program.opts();
 let pseudolocalizer;
 
-if (commander.args.length === 0) {
-    console.error("Please supply a value"); // eslint-disable-line no-console
+if (program.args.length === 0) {
+    console.error("Please supply a value");  
     process.exit(1);
 }
 
-const parsedRelativeScale = parseFloat(commander.relativeScale);
+const parsedRelativeScale = options.relativeScale ? parseFloat(options.relativeScale) : undefined;
 
-if (commander.preset) {
-    if (typeof commander.preset !== "string") {
-        console.error("Please specify a proper preset"); // eslint-disable-line no-console
+if (options.preset) {
+    if (!["CJK", "LCG", "AFB", "mix"].includes(options.preset)) {
+        console.error("Please specify a proper preset");  
         process.exit(1);
     }
-    pseudolocalizer = Pseudolocalizer[commander.preset](parsedRelativeScale, commander.prefix, commander.postfix, commander.prePad, commander.postPad);
+    pseudolocalizer = Pseudolocalizer[options.preset](parsedRelativeScale, options.prefix, options.postfix, options.prePad, options.postPad);
 } else {
-    pseudolocalizer = new Pseudolocalizer(parsedRelativeScale, commander.prefix, commander.postfix, commander.prePad, commander.postPad);
+    pseudolocalizer = new Pseudolocalizer(parsedRelativeScale, options.prefix, options.postfix, options.prePad, options.postPad);
 }
 
-commander.args.forEach(function (string) {
-    console.log(pseudolocalizer.pseudolocalize(string)); // eslint-disable-line no-console
+program.args.forEach(function (string) {
+    console.log(pseudolocalizer.pseudolocalize(string));  
 });
