@@ -20,7 +20,7 @@
     "cross-env": "^10.1.0",
     "eslint": "^10.5.0",
     "eslint-plugin-import": "^2.32.0",
-    "globals": "^17.6.0",
+    "globals": "^17.7.0",
     "gulp": "^5.0.1",
     "gulp-eslint-new": "^2.6.2",
     "gulp-if": "^3.0.0",
