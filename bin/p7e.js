@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
-const {program} = require("commander");
-const Pseudolocalizer = require("../lib/pseudolocalizer");
-const packageJson = require("../package.json");
+import {readFileSync} from "node:fs";
+import {program} from "commander";
+import Pseudolocalizer from "../lib/pseudolocalizer.js";
+
+const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
 
 program
     .version(packageJson.version)
@@ -27,7 +29,7 @@ if (program.args.length === 0) {
 const parsedRelativeScale = options.relativeScale ? parseFloat(options.relativeScale) : undefined;
 
 if (options.preset) {
-    if (!["CJK", "LCG", "AFB", "mix"].includes(options.preset)) {
+    if (!['CJK', 'LCG', 'AFB', 'mix'].includes(options.preset)) {
         console.error("Please specify a proper preset");  
         process.exit(1);
     }

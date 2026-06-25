@@ -1,7 +1,9 @@
-const path = require("path");
-const expect = require("chai").expect;
-const childProcess = require("child_process");
-const Pseudolocalizer = require("../../../lib/pseudolocalizer");
+import childProcess from "node:child_process";
+import {fileURLToPath} from "node:url";
+import {expect} from "chai";
+import Pseudolocalizer from "../../../lib/pseudolocalizer.js";
+
+const binPath = fileURLToPath(new URL("../../../bin/p7e.js", import.meta.url));
 
 describe("p7e", function () {
     this.timeout(60000);
@@ -10,7 +12,7 @@ describe("p7e", function () {
         const stubArguments = [];
 
         return new Promise((resolve, reject) => {
-            childProcess.execFile(path.join(__dirname, "../../../bin/p7e.js"), stubArguments, (error, stdout, stderr) => {
+            childProcess.execFile(binPath, stubArguments, (error, stdout, stderr) => {
                 try {
                     expect(error).to.be.ok;
                     expect(stdout).to.eql("");
@@ -31,7 +33,7 @@ describe("p7e", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7e.js"), stubArguments, (error, stdout, stderr) => {
+                childProcess.execFile(binPath, stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.be.ok;
                         expect(stdout).to.eql("");
@@ -52,7 +54,7 @@ describe("p7e", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7e.js"), stubArguments, (error, stdout, stderr) => {
+                childProcess.execFile(binPath, stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.eql(null);
                         expect(stdout).to.contain(Pseudolocalizer.mix().pseudolocalize(stubArguments[stubArguments.length - 1]));
@@ -72,7 +74,7 @@ describe("p7e", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7e.js"), stubArguments, (error, stdout, stderr) => {
+                childProcess.execFile(binPath, stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.eql(null);
                         expect(stdout).to.contain(new Pseudolocalizer().pseudolocalize(stubArguments[stubArguments.length - 1]));
