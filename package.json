@@ -2,6 +2,7 @@
   "name": "@randy.tarampi/pseudolocalize",
   "description": "Text-to-ʕ•ᴥ•ʔ translations",
   "version": "2.13.17",
+  "type": "module",
   "author": {
     "name": "Randy Tarampi",
     "email": "rt@randytarampi.ca",

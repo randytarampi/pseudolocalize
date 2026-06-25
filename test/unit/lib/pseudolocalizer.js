@@ -1,5 +1,5 @@
-const expect = require("chai").expect;
-const Pseudolocalizer = require("../../../lib/pseudolocalizer");
+import { expect } from "chai";
+import Pseudolocalizer from "../../../lib/pseudolocalizer.js";
 
 describe("pseudolocalizer", () => {
     describe("pseudolocalize", () => {
