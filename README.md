@@ -5,9 +5,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@randy.tarampi/pseudolocalize.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudolocalize.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudolocalize.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
-[![Build status](https://img.shields.io/travis/com/randytarampi/pseudolocalize.svg?style=flat-square)](https://travis-ci.com/randytarampi/pseudolocalize)
-[![Coverage status](https://img.shields.io/coveralls/randytarampi/pseudolocalize.svg?style=flat-square)](https://coveralls.io/github/randytarampi/pseudolocalize?branch=master)
-[![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/pseudolocalize.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/pseudolocalize/maintainability)
+[![CI](https://github.com/randytarampi/pseudolocalize/actions/workflows/ci.yml/badge.svg)](https://github.com/randytarampi/pseudolocalize/actions/workflows/ci.yml)
 [![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudolocalize?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
 
 
