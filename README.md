@@ -6,10 +6,23 @@
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudolocalize.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudolocalize.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![CI](https://github.com/randytarampi/pseudolocalize/actions/workflows/ci.yml/badge.svg)](https://github.com/randytarampi/pseudolocalize/actions/workflows/ci.yml)
-[![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudolocalize?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
 
 
 [![Install @randy.tarampi/pseudolocalize](https://nodeico.herokuapp.com/@randy.tarampi/pseudolocalize.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
+
+## Dependencies
+
+```bash
+brew install nvm
+nvm install 24
+corepack enable
+```
+
+## Installation
+
+```bash
+yarn install
+```
 
 Or, otherwise user defined pseudolocalizations...
 
