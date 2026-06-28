@@ -1,3 +1,10 @@
+## [2.13.19](https://github.com/randytarampi/pseudolocalize/compare/v2.13.18...v2.13.19) (2026-06-28)
+
+
+### Bug Fixes
+
+* **publish:** enable npm provenance for trusted publishing. Supply chain trust matters. 🔏 ([28f44df](https://github.com/randytarampi/pseudolocalize/commit/28f44df9b9d23403bb7d47011ba451c1f44b3bff))
+
 ## [2.13.18](https://github.com/randytarampi/pseudolocalize/compare/v2.13.17...v2.13.18) (2026-06-28)
 
 
