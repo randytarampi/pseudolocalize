@@ -71,7 +71,8 @@
   "license": "MIT",
   "main": "lib/pseudolocalizer.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "repository": "randytarampi/pseudolocalize.git",
   "scripts": {
