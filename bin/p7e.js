@@ -29,7 +29,7 @@ if (program.args.length === 0) {
 const parsedRelativeScale = options.relativeScale ? parseFloat(options.relativeScale) : undefined;
 
 if (options.preset) {
-    if (!['CJK', 'LCG', 'AFB', 'mix'].includes(options.preset)) {
+    if (!["CJK", "LCG", "AFB", "mix"].includes(options.preset)) {
         console.error("Please specify a proper preset");  
         process.exit(1);
     }
