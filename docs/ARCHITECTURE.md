@@ -11,3 +11,7 @@
 ## Dependency shape
 - `commander` provides the CLI interface.
 - The package has no workspace-level dependencies or subpackages.
+
+## CI/CD Pipeline
+- `.github/workflows/ci.yml` runs tests on PRs on Node 24.
+- `.github/workflows/release.yml` does master-branch semantic-release with OIDC trusted publishing.
