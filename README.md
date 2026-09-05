@@ -25,6 +25,10 @@ corepack enable
 yarn install
 ```
 
+## Verification
+
+Run the complete CI sequence locally with `yarn verify:ci`.
+
 Or, otherwise user defined pseudolocalizations...
 
 ## Usage
