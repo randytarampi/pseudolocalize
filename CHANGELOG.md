@@ -1,3 +1,12 @@
+## [2.13.21](https://github.com/randytarampi/pseudolocalize/compare/v2.13.20...v2.13.21) (2026-09-05)
+
+
+### Bug Fixes
+
+* **ci:** include all sources in c8 coverage report ([93c9acb](https://github.com/randytarampi/pseudolocalize/commit/93c9acb98a186daf35cef38b205c68b234aff5bc))
+* **ci:** make c8 coverage report explicit ([6a0f182](https://github.com/randytarampi/pseudolocalize/commit/6a0f1821187fe91ff606bb6eec5ab56c04fd38ec))
+* **ci:** make coveralls parse the c8 report ([c0c2741](https://github.com/randytarampi/pseudolocalize/commit/c0c27413c8d5856947abd511794ebb74f10dc40b))
+
 ## [2.13.20](https://github.com/randytarampi/pseudolocalize/compare/v2.13.19...v2.13.20) (2026-09-05)
 
 
