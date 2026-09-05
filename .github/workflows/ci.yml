@@ -12,6 +12,9 @@ concurrency:
 jobs:
   node:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -45,3 +48,8 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           file: coverage/lcov.info
+      - name: Upload coverage to Qlty
+        uses: qltysh/qlty-action/coverage@v2
+        with:
+          oidc: true
+          files: coverage/lcov.info
