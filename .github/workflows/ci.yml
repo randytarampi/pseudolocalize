@@ -38,3 +38,20 @@ jobs:
         run: yarn install
       - run: yarn lint
       - run: yarn test
+      - name: Generate coverage
+        run: yarn c8 -r lcov yarn test
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          file: coverage/lcov.info
+          flag-name: ${{ matrix.node-version }}
+          parallel: true
+
+  finish:
+    needs: node
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v2
+        with:
+          parallel-finished: true
