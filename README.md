@@ -6,6 +6,7 @@
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudolocalize.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudolocalize.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
 [![CI](https://img.shields.io/github/actions/workflow/status/randytarampi/pseudolocalize/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/randytarampi/pseudolocalize/actions/workflows/ci.yml) [![CodeQL](https://img.shields.io/github/actions/workflow/status/randytarampi/pseudolocalize/codeql.yml?branch=main&style=flat-square&label=CodeQL)](https://github.com/randytarampi/pseudolocalize/security/code-scanning)
+[![License](https://img.shields.io/github/license/randytarampi/pseudolocalize?style=flat-square)](LICENSE) [![Issues](https://img.shields.io/github/issues/randytarampi/pseudolocalize?style=flat-square)](https://github.com/randytarampi/pseudolocalize/issues) [![Pull requests](https://img.shields.io/github/issues-pr/randytarampi/pseudolocalize?style=flat-square)](https://github.com/randytarampi/pseudolocalize/pulls)
 
 
 [![Install @randy.tarampi/pseudolocalize](https://nodeico.herokuapp.com/@randy.tarampi/pseudolocalize.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudolocalize)
