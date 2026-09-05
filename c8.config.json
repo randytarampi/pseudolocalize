@@ -1,0 +1,12 @@
+{
+  "all": false,
+  "exclude": [
+    "node_modules/**",
+    "coverage/**",
+    ".yarn/**",
+    "test/**",
+    "bin/p7e.js",
+    "gulpfile.js",
+    "mocha.config.js"
+  ]
+}
