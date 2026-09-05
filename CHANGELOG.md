@@ -1,3 +1,10 @@
+## [2.13.20](https://github.com/randytarampi/pseudolocalize/compare/v2.13.19...v2.13.20) (2026-09-05)
+
+
+### Bug Fixes
+
+* **release:** trigger only after successful ci ([5682c6e](https://github.com/randytarampi/pseudolocalize/commit/5682c6ef93e92999cbdec45dd05e9cea25a907bd))
+
 ## [2.13.19](https://github.com/randytarampi/pseudolocalize/compare/v2.13.18...v2.13.19) (2026-06-28)
 
 
