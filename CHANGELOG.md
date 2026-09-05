@@ -1,3 +1,10 @@
+## [2.13.22](https://github.com/randytarampi/pseudolocalize/compare/v2.13.21...v2.13.22) (2026-09-05)
+
+
+### Bug Fixes
+
+* **release:** verify the ci run head matches the checkout sha ([43befcf](https://github.com/randytarampi/pseudolocalize/commit/43befcf2b53d992e4efafc603e75eca917dc1cb9))
+
 ## [2.13.21](https://github.com/randytarampi/pseudolocalize/compare/v2.13.20...v2.13.21) (2026-09-05)
 
 
